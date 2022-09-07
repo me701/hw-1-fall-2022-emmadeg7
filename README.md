@@ -1,4 +1,4 @@
-# ME 701 -- Homework 1 -- Your Name Here
+# ME 701 -- Homework 1 -- Emma Degenhardt
 
 ## Instructions
 
@@ -27,12 +27,12 @@ or Octave).
 
 ### Solution
 
-Write your solution here.  Note, in the past, we've used a full, graphical
-version of Linux.  With WSL, you probably don't have as direct a path for
-exploring software in the Software Manager.  However, use the power of
-Google (or AskJeeves) to explore what sorts of open-source software is out
-there for technical or other applications.
-
+I have had to use iMovie for class projects before, I found a free open-source alternative called OpenShot.
+This is for those without Macs who did not have access to iMovie. In high school I did not have a Mac computer, 
+so when I had to edit all of my video clips into one “movie” I had to go to my friend’s house to use her iMovie 
+application. OpenShot has the ability to cut videos together, layer videos and sounds, add transitions, add text, 
+and video editing. OpenShot has all of the basic functionality that iMovie does, making it a great alternative to 
+me using my friend’s iMovie application.
 
 ## Problem 3 -- Your CPU
 
@@ -46,12 +46,16 @@ using `ls > directory_contents.txt` to dump the contents of a directory to a fil
 
 ### Solution
 
-To display CPU information, I used the following command:
+To display CPU information on my Mac I used:
+system_profiler | grep Processor
 
-```bash
-ls -al # <--- that's not right, but it shows you how to include
-       #      code in Markdown!
-```
+That command provided the following information:
+   IOSlaveProcessor:
+      Bundle ID: com.apple.driver.IOSlaveProcessor
+      Location: /System/Library/Extensions/IOSlaveProcessor.kext
+      Processor Name: Dual-Core Intel Core i5
+      Processor Speed: 2.3 GHz
+      Number of Processors: 1
 
 ## Problem 4 -- Resource Hogs
 
@@ -63,7 +67,8 @@ in your writeup.
 
 ### Solution
 
-
+To find how much memory and processing my applications are using I used the following command in my terminal:
+top
 
 ## Problem 5 -- `bash`
 
@@ -74,3 +79,7 @@ Where is `bash` located on your Linux system?  And what version of
 determine this information.
 
 ### Solution
+
+My bash is located in /bin/bash. I found this by using the “which” command in my terminal.
+The bash version I am using is 3.2.57(1)-release. I found this out by typing the following into the terminal:
+Echo “${BASH_VERSION}”
